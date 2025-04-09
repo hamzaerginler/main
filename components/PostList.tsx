@@ -1,4 +1,3 @@
-// components/PostList.tsx
 import { useEffect, useState } from 'react'
 import PostCard from './PostCard'
 
@@ -35,7 +34,7 @@ export default function PostList() {
           comments={post.comments}
           image={post.image}
           content={post.content}
-          alt={post.alt}  // alt alanını da geçiriyoruz
+          alt={post.alt}
         />
       ))}
     </div>
