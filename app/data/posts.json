@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "title": "Dresden Green Vault robbery: Priceless diamonds stolen",
+      "date": "NOVEMBER 21, 2019",
+      "comments": 10,
+      "image": "/image/resim1.jpg",
+      "alt": "Diamond Rings",
+      "content": "Burglars have stolen three diamond jewellery sets from one of Europe's largest treasure collections \u2013 the Dresden Green Vault in eastern Germany. The historic sets consist of 37 parts each, and there are fears the thieves may try to break them up. Officials are still trying to establish exactly how much was stolen in the break-in early on Monday."
+    },
+    {
+      "id": 2,
+      "title": "Cannabis legalisation: Does it lead to harder drug use?",
+      "date": "NOVEMBER 20, 2019",
+      "comments": 3,
+      "image": "/image/resim2.jpg",
+      "alt": "Cannabis plant",
+      "content": "There's strong disagreement among Democratic contenders for the US presidency about legalizing cannabis and it's been a flashpoint in their televised debates so far. Currently the leading contender in the race won't be drawn either way. He wants more evidence about whether using it could act as a 'gateway' to the use of harder drugs before it's legalized throughout the US. 'Before I legalize it nationally,' said Biden, 'I want to make sure we know a lot more about the science behind it.'"
+    },
+    {
+      "id": 3,
+      "title": "Why do billions of people still not have glasses?",
+      "date": "NOVEMBER 19, 2019",
+      "comments": 2,
+      "image": "/image/resim3.jpg",
+      "alt": "Eyeglasses",
+      "content": "Despite the fact that poor eyesight can be easily corrected with the right lenses, billions of people worldwide still don't have access to proper eyeglasses. This widespread issue affects productivity, education, and quality of life for many, especially in developing regions."
+    },
+    {
+      "id": 4,
+      "title": "Is it better to drink cow's milk or a dairy-free alternative?",
+      "date": "NOVEMBER 18, 2019",
+      "comments": 4,
+      "image": "/image/resim4.jpg",
+      "alt": "Glass of milk with cookies",
+      "content": "Milk plays a crucial role in the life of all mammals, right from birth. But some say that drinking another mammal's milk is unnecessary, unnatural, even unhealthy. As the only animal to drink the milk of another species, humans have an unusual relationship with the white stuff. Most other animals are weaned off milk in infancy, once we start to need more complex foods. So why do humans keep drinking it?"
+    },
+    {
+      "id": 5,
+      "title": "How we could sleep better \u2014 in less time",
+      "date": "NOVEMBER 18, 2019",
+      "comments": 4,
+      "image": "/image/resim5.jpg",
+      "alt": "Cat sleeping under blankets",
+      "content": "We can now amplify the restorative benefits of sleep. Could this help us cope with later nights and early mornings? We often view our sleeplessness as a badge of pride \u2013 a measure of our impossibly hectic schedules. Thomas Edison, Margaret Thatcher, Martha Stewart and Donald Trump have all famously claimed to get by on just four or five hours' sleep a night \u2013 much less than the seven to nine hours recommended to most adults."
+    }
+  ]
