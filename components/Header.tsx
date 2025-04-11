@@ -13,10 +13,6 @@ export default function Header() {
         <a href="#"><i className="fab fa-facebook-f" /></a>
       </div>
 
-      
-      
-
-      
       <div className="flex items-center gap-4">
         <Search className="w-5 h-5 text-gray-500 cursor-pointer" />
         <Button className="bg-gray-900 text-white rounded px-4 py-2 text-sm">
