@@ -2,6 +2,7 @@
 
 import { Search } from 'lucide-react'
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function Header() {
   return (
@@ -18,6 +19,11 @@ export default function Header() {
         <Button className="bg-gray-900 text-white rounded px-4 py-2 text-sm">
           Subscribe
         </Button>
+        <Link href="/login">
+          <Button variant="outline" className="text-sm">
+            Login
+          </Button>
+        </Link>
       </div>
     </header>
   )

@@ -1,27 +1,28 @@
-import { useEffect, useState } from 'react'
-import PostCard from './PostCard'
+import { useEffect, useState } from "react"
+import PostCard from "./PostCard"
 
 interface Post {
-  id: number;
-  title: string;
-  date: string;
-  comments: number;
-  image: string;
-  alt: string;
-  content: string;
+  id: number
+  title: string
+  content: string
+  date: string
+  comments: number
+  image: string
+  alt: string
 }
 
 export default function PostList() {
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [posts, setPosts] = useState<Post[]>([])
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await import('../app/data/posts.json');
-      setPosts(res.default);
-    };
+      const res = await fetch("/api/posts")
+      const data = await res.json()
+      setPosts(data)
+    }
 
-    fetchPosts();
-  }, []);
+    fetchPosts()
+  }, [])
 
   return (
     <div>
@@ -38,5 +39,5 @@ export default function PostList() {
         />
       ))}
     </div>
-  );
+  )
 }

@@ -4,11 +4,11 @@ import { apiPost } from "../database";
  
 export async function GET() {
   try {
-    // JSON dosyasını oku
+    
     const filePath = path.join(process.cwd(), 'app/data/posts.json');
     const fileContent = await fs.readFile(filePath, 'utf8');
     const posts = JSON.parse(fileContent);
-    // Her makaleyi veritabanına ekle
+    
     const results = [];
     for (const post of posts) {
       const query = `
@@ -18,7 +18,7 @@ export async function GET() {
       const values = [
         post.title,
         post.date,
-        String(post.comments), // Number değerini String'e çevir (SQL'e uygun olması için)
+        String(post.comments), 
         post.image,
         post.alt,
         post.content
