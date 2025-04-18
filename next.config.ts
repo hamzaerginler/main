@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'trthaberstatic.cdn.wp.trt.com.tr',
+      },
+    ],
+  },
+}
 
-export default nextConfig;
+module.exports = nextConfig

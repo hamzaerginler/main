@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { FaInstagram, FaTwitter, FaFacebookF } from 'react-icons/fa';
+import {
+  FaInstagram,
+  FaTwitter,
+  FaFacebookF,
+  FaWhatsapp,
+  FaPinterestP,
+} from "react-icons/fa";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,45 +31,40 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <main className="min-h-screen flex flex-col justify-between">
+          <div className="flex-grow">{children}</div>
 
-        <footer className="bg-gray-300 text-black py-20">
-          <div className="container mx-auto px-15 grid grid-cols-2 md:grid-cols-2 gap-30">
+          <footer className="bg-gray-300 text-black py-20">
+            <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div>
+                  <a href="#" className="hover:underline block mb-2 text-gray-500">Latest Posts</a>
+                  <a href="#" className="hover:underline block mb-2 text-gray-500">Popular Posts</a>
+                </div>
+                <div>
+                  <a href="#" className="hover:underline block mb-2 text-gray-500">Search</a>
+                  <a href="#" className="hover:underline block text-gray-500">Contact Information</a>
+                </div>
+                <div>
+                  <a href="#" className="hover:underline block mb-2 text-gray-500">Privacy Policy</a>
+                  <a href="#" className="hover:underline block text-gray-500">Terms of Use</a>
+                </div>
+              </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-20">
-              <div>
-                <a href="#" className="hover:underline block mb-2 text-gray-500 ">Latest Posts</a>
-                <a href="#" className="hover:underline block mb-2 text-gray-500">Popular Posts</a>
+              <div className="flex gap-4 items-center justify-center sm:justify-end">
+                <FaWhatsapp className="text-xl cursor-pointer" />
+                <FaFacebookF className="text-xl cursor-pointer" />
+                <FaTwitter className="text-xl cursor-pointer" />
+                <FaPinterestP className="text-xl cursor-pointer" />
               </div>
-              <div>
-                <a href="#" className="hover:underline block mb-2 text-gray-500">Search</a>
-                <a href="#" className="hover:underline block text-gray-500">Contact Information</a>
-              </div>
-              <div>
-                <a href="#" className="hover:underline block mb-2 text-gray-500">Privacy Policy</a>
-                <a href="#" className="hover:underline block mb-2 text-gray-500">Terms of Use</a>
-              </div>
-            
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                <i className="fab fa-whatsapp" />
-                <i className="fab fa-facebook-f" />
-                <i className="fab fa-twitter" />
-                <i className="fab fa-pinterest-p" />
-                
-              </div>
 
-          </div>
-          <div className="text-gray-400 flex gap-4 justify-center mt-10">
-            <p>Copyright © 2019. All rights reserved.</p>
-          </div>
-
-
-        </footer>
-
+            <div className="text-gray-400 flex gap-4 justify-center mt-10">
+              <p>Copyright © 2019. All rights reserved.</p>
+            </div>
+          </footer>
+        </main>
       </body>
     </html>
   );
